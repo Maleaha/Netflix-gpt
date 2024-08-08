@@ -1,7 +1,8 @@
 # Features
 -Login/Sign uo 
-    -Sign in/sign up form 
+    -Sign in/sign up form  
     -redirect to browse page
+    -form validation
 -Browse page (after authentication)
     -header
     -Main movie
