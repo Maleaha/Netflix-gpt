@@ -1,12 +1,16 @@
-import { configureStore } from "@reduxjs/toolkit";
-import userReducer from "./userSlice"; // Import the default export and rename it to userReducer
-import moviesReducer from "./moviesSlice";
+import { configureStore } from '@reduxjs/toolkit';
+import userReducer from './userSlice';
+import movieReducer from './moviesSlice';
+import gptReducer from './gptSlice';
+import configReducer from './configSlice';
 
-const appstore = configureStore({
-    reducer: {
-        user: userReducer,
-        movies:moviesReducer,
-    }
+const appStore = configureStore({
+  reducer: {
+    user: userReducer,
+    movies: movieReducer,
+    gpt: gptReducer,
+    config: configReducer
+  },
 });
 
-export default appstore;
+export default appStore;
